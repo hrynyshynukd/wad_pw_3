@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5ef">
+  <meta name="description" content="ARTBOARD — добірка ніжних абстрактних візуальних робіт.">
+  <title>ARTBOARD | Visual art gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="ARTBOARD — на початок сторінки">
+      <img class="brand-mark" src="logo.svg" alt="" width="36" height="36">
+      <span class="brand-name">ARTBOARD</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="gallery-section" aria-label="Галерея цифрового мистецтва">
+      <div class="gallery" id="gallery">
+      </div>
+      <div class="loading-sentinel" id="loading-sentinel" aria-hidden="true">
+        <span class="loading-dot"></span>
+        <span class="loading-dot"></span>
+        <span class="loading-dot"></span>
+      </div>
+      <p class="sr-only" id="gallery-status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>ARTBOARD</span>
+    <span class="footer-note">A little space for visual inspiration</span>
+  </footer>
+
+  <dialog class="art-dialog" id="art-dialog" aria-label="Перегляд роботи">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Закрити перегляд">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18"></path>
+      </svg>
+    </button>
+    <div class="dialog-layout">
+      <div class="dialog-artwork">
+        <img id="dialog-image" src="" alt="">
+      </div>
+      <aside class="dialog-info">
+        <p class="eyebrow">ARTBOARD / VISUAL STUDY</p>
+        <h1 id="dialog-title">Soft Bloom</h1>
+        <p class="dialog-description" id="dialog-description">
+          М'які форми, розсіяне світло та пастельні відтінки створюють спокійну абстрактну композицію.
+        </p>
+        <div class="tag-list" id="dialog-tags" aria-label="Теги роботи"></div>
+        <p class="dialog-index" id="dialog-index"></p>
+      </aside>
+    </div>
+  </dialog>
+</body>
+</html>
